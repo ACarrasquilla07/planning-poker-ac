@@ -2,7 +2,7 @@
   "name": "planning-poker-ac",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ACarrasquilla07.github.io/planning-poker-ac",
+  "homepage": "https://acarrasquilla07.github.io/planning-poker-ac",
   "type": "module",
   "scripts": {
     "dev": "vite",
