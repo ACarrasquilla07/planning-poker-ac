@@ -52,3 +52,6 @@ export default tseslint.config({
   },
 })
 ```
+
+¿Cómo desplegar en github pages?
+https://www.youtube.com/watch?v=Bk28snjHr7c
