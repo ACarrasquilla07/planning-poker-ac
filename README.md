@@ -55,3 +55,29 @@ export default tseslint.config({
 
 ¿Cómo desplegar en github pages?
 https://www.youtube.com/watch?v=Bk28snjHr7c
+
+Plan de arquitectura
+
+planning-poker-app/
+│── public/                 # Archivos estáticos (index.html, favicon, etc.)
+│── src/
+│   ├── api/                # Servicios para llamadas a APIs (ej. WebSockets, Firebase, etc.)
+│   ├── assets/             # Imágenes, íconos y estilos globales
+│   ├── components/         # Componentes reutilizables (Button, Card, Modal, etc.)
+│   ├── features/           # Módulos funcionales separados por dominio
+│   │   ├── room/           # Lógica y componentes relacionados con las salas de poker
+│   │   ├── voting/         # Lógica y componentes para la votación de cartas
+│   │   ├── user/           # Lógica relacionada con los usuarios
+│   ├── hooks/              # Hooks personalizados (useSocket, useVoting, etc.)
+│   ├── layouts/            # Diseños generales (Header, Sidebar, MainLayout, etc.)
+│   ├── pages/              # Páginas de la app (Home, Room, Results, etc.)
+│   ├── providers/          # Context API / Zustand / Redux para manejo de estado global
+│   ├── routes/             # Configuración de rutas con React Router
+│   ├── utils/              # Funciones utilitarias (helpers, formatters, etc.)
+│   ├── App.tsx             # Componente raíz de la app
+│   ├── main.tsx            # Punto de entrada (si usas Vite) o index.tsx (CRA)
+│── tests/                  # Pruebas unitarias e integración
+│── .env                    # Variables de entorno
+│── package.json            # Dependencias y scripts de la app
+│── tsconfig.json           # Configuración de TypeScript (si usas TS)
+│── vite.config.ts          # Configuración de Vite (o webpack.config.js si usas Webpack)
